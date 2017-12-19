@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <header class="search home">
+
+
+            <p id="search-button"><img class="iconic iconic-md" data-src="IMG/magnifying-glass.svg" alt="Search" title="Search" /></p>
+            <p id="back-button"><img class="iconic iconic-md" data-src="IMG/carriage-return.svg" alt="Back" title="back" /></p>
+
+            <input type="text" id="search-input" placeholder="search" autofocus/>
+        </header>
+
+        <div class="page" id="search-results">
+            <section class="title">
+                <p class="num"></p>
+            </section>
+            <section class="content">
+
+            </section>
+            <div class="attribution">
+                <img src="IMG/powered-by-square-blue.svg" alt="The Movie DB" id="attribute" />
+            </div>
+        </div>
+
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <div>
+                <h2 class="movie-title" id="details-title">Movie Title</h2>
+
+            </div>
+            <section class="content">
+                <div class="movie">
+                    <p class="movie-tagline" id="overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sapiente magni unde quaerat perferendis, voluptatibus maiores debitis iure ullam magnam corporis expedita quam eius quae eveniet voluptate excepturi rem. Excepturi!</p>
+                    <p id="voteAverage"></p>
+                    <p id="voteCount"></p>
+                    <button class="theRecommendButton" id="recommendbtn">
+                        Other Movies You Might Like!
+                    </button>
+                </div>
+            </section>
+            <div class="attribution">
+                <img src="IMG/powered-by-square-blue.svg" alt="The Movie DB" id="attribute" />
+            </div>
+        </div>
+    </main>
+
+    <div class="attribution">
+        <img src="IMG/powered-by-square-blue.svg" alt="The Movie DB" id="attribute" />
+    </div>
+
+    <div class="loading not">
+        <p class="material-icons">loop</p>
+
+    </div>
+
+
+    <template id="origTemplate" class="testClass">
+           <div class="movie"  >
+                <img class="poster" src="" alt="poster" class="poster" /><h2 class="movie-title" >Movie Title</h2>
+                <p class="movie-desc" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sapiente magni unde quaerat perferendis, voluptatibus maiores debitis iure ullam magnam corporis expedita quam eius quae eveniet voluptate excepturi rem. Excepturi!</p>
+                <h4></h4>
+            </div>
+    </template>
+    <script src="JS/iconic.min.js"></script>
+    <script src="JS/key.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
