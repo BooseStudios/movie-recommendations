@@ -212,7 +212,7 @@ RECOMMENDATIONS
 }
 
 .theRecommendButton:hover {
-    background-color: #555555;
+    background-color: darkred;
     color: white;
     font-style: italic;
 }
